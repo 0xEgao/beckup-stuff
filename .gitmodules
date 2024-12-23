@@ -1,0 +1,3 @@
+[submodule "course-selling-app"]
+	path = course-selling-app
+	url = https://github.com/0xEgao/beckup-stuff.git
