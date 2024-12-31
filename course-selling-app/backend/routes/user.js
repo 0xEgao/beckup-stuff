@@ -21,7 +21,7 @@ userrouter.post('/signup', async (req, res) => {
 
 userrouter.post('/signin', async(req, res) => {
     const { email, password } = req.body;
-    await userModel.find({
+    await userModel.findOne({
         email: email,
         password: password
     });
