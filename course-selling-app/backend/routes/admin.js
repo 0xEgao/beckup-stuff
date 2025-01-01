@@ -1,9 +1,9 @@
 const express = require('express');
 const AdminRouter = express.Router();
-const jwt=require('jsonwebtoken');
+require('dotenv').config();
+const jwt = require('jsonwebtoken');
 const { adminModel } = require('../db');
-const JWT_ADMIN_PASSWORD = "asdasdasdadasdad";
-
+const JWT_ADMIN_PASSWORD = process.env.JWT_ADMIN_PASSWORD;
 //admin is just coursecreator
 AdminRouter.get('/admins', (req, res) => {
     res.json({
