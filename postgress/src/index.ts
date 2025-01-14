@@ -17,7 +17,8 @@ app.post('/signup', async (req, res) => {
     const password = req.body.password;
     try {
         const Query = `INSERT INTO users (username,email,password) VALUES ('${1}','${2}','${3}')`;
-        const response = await pgClient.query(Query,[username, email, password]);
+        const response = await pgClient.query(Query, [username, email, password]);
+        
         res.json({
             message:"You have signed up"
         });

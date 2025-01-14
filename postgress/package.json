@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc -b && node ./dist/index.js"
+    "dev": "tsc -b && node ./dist/index.js",
+    "transaction": "tsc -b && node ./dist/transaction.js",
+    "relationship": "tsc -b && node ./dist/relationship.js",
+    "joins": "tsc -b && node ./dist/joins.js"
   },
   "keywords": [],
   "author": "",
